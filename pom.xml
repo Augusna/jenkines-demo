@@ -45,7 +45,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>${docker-maven-plugin.version}</version>
                 <configuration>
-                    <imageName>47.102.122.97:5000/jenkines-demo/${project.artifactId}:${project.version}</imageName>
+                    <imageName>39.106.84.33:5000/jenkines-demo/${project.artifactId}:${project.version}</imageName>
                     <baseImage>openjdk:8-jdk-alpine</baseImage>
                     <entryPoint>["java","-jar","/${project.build.finalName}.jar"]</entryPoint>
                     <resources>
@@ -55,7 +55,7 @@
                             <include>${project.build.finalName}.jar</include>
                         </resource>
                     </resources>
-                    <dockerHost>http://47.102.122.97:2375</dockerHost>
+                    <dockerHost>http://39.106.84.33:2375</dockerHost>
                 </configuration>
             </plugin>
 
